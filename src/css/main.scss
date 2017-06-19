@@ -1,3 +1,6 @@
+// SCSS knows how to handle the leading underscore and the file extension!
+@import "colors";
+
 #randomInt {
   background-color: $main;
   border: 1px solid black;
