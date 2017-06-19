@@ -1,5 +1,6 @@
 // Resolves the right path
 const path = require('path');
+const webpack = require('webpack');
 
 const config = {
   // Entry path can be relative
@@ -27,7 +28,12 @@ const config = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      //..
+    })
+  ]
 }
 
 module.exports = config;
